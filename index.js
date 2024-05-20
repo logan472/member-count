@@ -18,7 +18,7 @@ let refreshCount = async () => {
     let groupResponse = await fetch(`https://groups.roblox.com/v1/groups/${config.groupId}`);
     let groupBody = await groupResponse.json();
     let newCount = groupBody.memberCount;
-    let amountLeft = newCount - 200000
+    let amountLeft = 200000 - newCount
     if(firstCheck === true) {
         firstCheck = false;
         currentCount = newCount;
