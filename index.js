@@ -27,7 +27,7 @@ let refreshCount = async () => {
     if(milestones.some(milestone => newCount > milestone && currentCount < milestone)) {
         let milestoneReached = milestones.find(milestone => newCount > milestone && currentCount < milestone);
         let embed = new Discord.MessageEmbed();
-        embed.setThumbnail(https://cdn.discordapp.com/attachments/1088970007465164942/1200403725974515722/Verde_Logo_copy.png?ex=664bde56&is=664a8cd6&hm=894e2daaf4faf50ffb77352cb58e56aed3ec575cb5124edce1015d6b7a2860ba&);
+        embed.setThumbnail(config.groupIconURL);
         embed.setTitle('🎊 Milestone reached!');
         embed.setDescription(`${groupBody.name} just hit the ${milestoneReached} group member count milestone!`);
         embed.setColor('#84b060');
