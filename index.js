@@ -35,10 +35,10 @@ let refreshCount = async () => {
     if(newCount !== currentCount) {
         if(newCount > currentCount) {
             let embed = new Discord.MessageEmbed();
-            embed.setAuthor(groupBody.name, config.groupIconURL);
+            embed.setThumbnail(config.groupIconURL);
             embed.setTitle('🎉 New member!');
             embed.setDescription(`${groupBody.name} just reached ${newCount} members!`);
-            embed.setColor('#a58ed3');
+            embed.setColor('#d96370');
             return client.send(embed);
         }
     }
